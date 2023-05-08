@@ -6,3 +6,11 @@ h1 {
 
 p {
 }
+
+.hide {
+    visibility: hidden;
+}
+
+.show {
+    visibility: visible;
+}
