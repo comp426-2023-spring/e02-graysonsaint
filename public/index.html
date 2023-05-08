@@ -6,50 +6,45 @@
         <script src="scripts.js"></script>
     </head>
     <body>
-
     <!-- Your interface markup goes here -->
     <!-- For interface examples, look in the `/examples/` directory in the root of your starter code repo. -->
-
     <h2>Click <a href="rules.html">here</a> for the rules</h2><br/><br/>
     <h2>Game Choice:</h2>
     <div id="game-choice" class="show">
         <input type="radio" name="game-choice" id="rps" value="rps" onclick="showShots()" checked>
         <label for="rps">Play Rock, Paper, Scissors?</label>
-        <br/>
+        <br>
         <input type="radio" name="game-choice" id="rpsls" value="rpsls" onclick="showShots()">
         <label for="rpsls">Play Rock, Paper, Scissors, Lizard, Spock?</label>
-        <br/><br/>
+        <br><br>
         <input type="checkbox" name="opp-choice" id="opp" value="opp" onclick="showShots()">
         <label for="opp">Play against an opponent?</label>
-        <br/><br/>
+        <br><br>
     </div>
-
     <div id="rpsshots" class="hide">
         <input type="radio" name="shot-choice" id="rock" value="rock" checked>
         <label for="rock">Rock</label>
-        <br/>
+        <br>
         <input type="radio" name="shot-choice" id="paper" value="paper">
         <label for="paper">Paper</label>
-        <br/>
+        <br>
         <input type="radio" name="shot-choice" id="scissors" value="scissors">
         <label for="scissors">Scissors</label>
-        <br/>
+        <br>
     </div>
     <div id="rpslsshots" class="hide">
         <input type="radio" name="shot-choice" id="lizard" value="lizard">
         <label for="lizard">Lizard</label>
-        <br/>
+        <br>
         <input type="radio" name="shot-choice" id="spock" value="spock">
         <label for="spock">Spock</label>
-        <br/><br/>
+        <br><br>
     </div>
-
     <div id="submit-btns">
         <button id="play-btn" type="submit" onclick="play()">Play</button>
         <button id="restart-btn" type="submit" onclick="restart()">Start Over</button>
         <br/>
     </div>
-    
     <div id="results" class="hide">
         <h2>Results:</h2>
         <p id="result">Result here</p>
